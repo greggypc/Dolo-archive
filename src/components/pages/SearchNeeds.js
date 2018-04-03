@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchNeeds = () => (
   <div>
-    <h1>SearchNeeds</h1>
+    <h1>Search Needs</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
       varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
