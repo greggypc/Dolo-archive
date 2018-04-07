@@ -1,7 +1,9 @@
-import React from "react";
+import React from "react"; 
+import Header from "../components/main/Header";
 
 const Donations = () => (
   <div>
+    <Header />
     <h1>Donations</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
@@ -12,3 +14,4 @@ const Donations = () => (
 );
 
 export default Donations;
+

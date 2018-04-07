@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = ({ children }) => (
   <div>
-    <img src="./assets/dolo.png" alt="Dolo" />
+    <h3>Header</h3>
   </div>
   
 );

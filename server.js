@@ -1,5 +1,5 @@
 // *****************************************************************************
-// Server.js - This file is the initial starting point for the Node/Express server.
+// server.js - starting point for the Node/Express server.
 //
 // ******************************************************************************
 // *** Dependencies
@@ -7,7 +7,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
-var mysql2 = require("mysql2");
+
 
 // Sets up the Express App
 // =============================================================
@@ -38,11 +38,12 @@ require("./app/routes/api-routes.js")(app);
 require("./app/routes/html-routes.js")(app);
 
 
-
-app.get('/', (req, res) =>{
+// TEST! - talking to server?
+app.get('/hi', (req, res) =>{
   res.send('hello from your server!');
-})
-// GET route for returning all Donations of a specific user
+});
+
+// TEST! - GET route for returning all Donations
 app.get("/api/donations/", function(req, res) {
   db.Donation.findAll({})
   .then(function(dbDonation) {
