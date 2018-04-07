@@ -23,14 +23,15 @@
   "homepage": "https://github.com/greggypc/Dolo#readme",
   "devDependencies": {
     "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.17.3"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "method-override": "^2.3.10",
     "mysql2": "^1.5.2",
-    "nodemon": "^1.17.3",
-    "sequelize": "^4.33.4"
+    "sequelize": "^4.33.4",
+    "nodemon": "^1.17.3"
+
   }
 }

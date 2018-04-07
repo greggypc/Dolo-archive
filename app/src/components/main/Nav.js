@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => (
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+<nav className="navbar navbar-default">
+  <div className="container-fluid">
  
     {/* <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
