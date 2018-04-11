@@ -1,6 +1,8 @@
+
 import React, { Component } from 'react';
 import { Navbar, Button } from 'react-bootstrap';
 import './App.css';
+
 
 class App extends Component {
   goTo(route) {
@@ -23,14 +25,14 @@ class App extends Component {
         <Navbar fluid>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Auth0 - React</a>
+              <a href="#">Dolo</a>
             </Navbar.Brand>
             <Button
               bsStyle="primary"
               className="btn-margin"
               onClick={this.goTo.bind(this, 'home')}
             >
-              Home
+              Auth0 Home
             </Button>
             {
               !isAuthenticated() && (
