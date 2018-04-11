@@ -12,11 +12,10 @@ var methodOverride = require("method-override");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 8080;
-var db = require("./app/models");
+var PORT = process.env.PORT || 3001;
 
 // Requiring our models for syncing
-var db = require("./app/models");
+var db = require("./client/models");
 
 // Sets up the Express app to handle data parsing
 
@@ -30,12 +29,12 @@ app.use(methodOverride('_method'));
 
 
 // Static directory
-app.use(express.static('app/public'));
+app.use(express.static('client/public'));
 
 // Routes
 // =============================================================
-require("./app/routes/api-routes.js")(app);
-require("./app/routes/html-routes.js")(app);
+// require("./app/routes/api-routes.js")(app);
+// require("./app/routes/html-routes.js")(app);
 
 
 // TEST! - talking to server?

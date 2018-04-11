@@ -1,15 +1,13 @@
 {
   "name": "Dolo",
   "version": "1.0.0",
-  "private": true,
-  "proxy": "http://localhost:8080/",
   "description": "Donation Location App",
   "main": "server.js",
   "scripts": {
+    "server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"nodemon server.js\" \"npm run client\""
-
-
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "installDeps": "yarn && cd client && yarn"
   },
   "repository": {
     "type": "git",
@@ -18,7 +16,7 @@
   "author": "Darren Smith, Greg Church, Brandon Shapiro, Preston McNabb, Brandon Cowart",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GitDarren/Dolo/issues"
+    "url": "https://github.com/greggypc/Dolo/issues"
   },
   "homepage": "https://github.com/greggypc/Dolo#readme",
   "devDependencies": {
@@ -26,12 +24,12 @@
     "nodemon": "^1.17.3"
   },
   "dependencies": {
+    "auth0-js": "^9.0.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "method-override": "^2.3.10",
     "mysql2": "^1.5.2",
-    "sequelize": "^4.33.4",
-    "nodemon": "^1.17.3"
-
+    "axios": "^0.16.2",
+    "sequelize": "^4.33.4"
   }
 }
