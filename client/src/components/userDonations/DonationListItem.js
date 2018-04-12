@@ -1,6 +1,6 @@
 import React from "react";
 
-export const DonationListItem = ({ children }) => {
+const DonationListItem = ({ children }) => {
   return (
     <div className="list-overflow-container">
       <ul className="list-group">
@@ -9,3 +9,5 @@ export const DonationListItem = ({ children }) => {
     </div>
   );
 };
+
+export default DonationListItem;

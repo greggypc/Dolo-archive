@@ -26,7 +26,7 @@ const Hero = ({ children }) => (
       
       </div>
     </div>
-  <div className="parallax"><img src="../../public/images/dolo04.jpg" alt="Unsplashed background img 1" /></div>
+  <div className=""><img src="../../images/dolo04.jpg" alt="Unsplashed background img 1" /></div>
   </div>
     {children}
   </div>
