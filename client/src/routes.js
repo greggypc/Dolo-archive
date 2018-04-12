@@ -50,6 +50,7 @@ export const makeMainRoutes = () => {
             return <Callback {...props} /> 
           }}/> 
       <Nav />
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/donations" component={Donations} />

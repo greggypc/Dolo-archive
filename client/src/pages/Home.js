@@ -1,8 +1,9 @@
 import React from "react";
+import Hero from "../components/main/Hero";
 
 const Home = () => (
   <div>
-    <h1>Home Page</h1>
+    <Hero />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
       varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.

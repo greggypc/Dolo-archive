@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Nav = () => (
 
 
-<nav className="blue" role="navigation">
+<nav className="blue">
     <div className="nav-wrapper left-align">
       <a id="logo-container" href="#" className="brand-logo"><img src="../../images/dolo.png" alt="DoLo" /></a>
       <ul className="right hide-on-med-and-down">
