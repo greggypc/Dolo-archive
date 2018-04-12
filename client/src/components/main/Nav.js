@@ -1,22 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Nav = () => (
-<nav className="navbar navbar-default">
-  <div className="container-fluid">
- 
-    {/* <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div> */}
 
-  <ul className="nav nav-tabs">
-    <li className={window.location.pathname === "/" ? "active" : ""}>
+const Nav = () => (
+
+
+<nav className="blue" role="navigation">
+    <div className="nav-wrapper left-align">
+      <a id="logo-container" href="#" className="brand-logo"><img src="../../images/dolo.png" alt="DoLo" /></a>
+      <ul className="right hide-on-med-and-down">
+      <li className={window.location.pathname === "/" ? "active" : ""}>
       <Link to="/">Home</Link>
     </li>
     <li className={window.location.pathname === "/donations" ? "active" : ""}>
@@ -34,36 +27,16 @@ const Nav = () => (
     <li className={window.location.pathname === "/about" ? "active" : ""}>
       <Link to="/about">About</Link>
     </li>
-  </ul>
-  </div>
-</nav>
+      </ul>
 
+      <ul id="nav-mobile" className="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+    
+    </div>
+  </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-  // <nav className="navbar navbar-inverse navbar-top">
-  //   <div className="container-fluid">
-  //     <div className="navbar-header">
-  //       <button type="button" className="collapsed navbar-toggle">
-  //         <span className="sr-only">Toggle navigation</span>
-  //         <span className="icon-bar" /> <span className="icon-bar" />
-  //         <span className="icon-bar" />
-  //       </button>
-  //       <a href="/" className="navbar-brand">
-  //         DoLo :: Donation Location
-  //       </a>
-  //     </div>
-  //   </div>
-  // </nav>
 );
 
 export default Nav;
