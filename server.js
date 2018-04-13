@@ -33,7 +33,7 @@ app.use(express.static('client/public'));
 
 // Routes
 // =============================================================
-// require("./app/routes/api-routes.js")(app);
+require("./client/routes/apiRoutes.js")(app);
 // require("./app/routes/html-routes.js")(app);
 
 
@@ -42,9 +42,23 @@ app.get('/hi', (req, res) =>{
   res.send('hello from your server!');
 });
 
+
 // TEST! - GET route for returning all Donations
 app.get("/api/donations/", function(req, res) {
   db.Donation.findAll({})
+  .then(function(dbDonation) {
+    res.json(dbDonation);
+  });
+});
+
+
+ //GET route for returning all Donations of a specific user
+ app.get("/api/donations/uid", function(req, res) {
+  db.Donation.findAll({
+    where: {
+      uid: 3
+    }
+  })
   .then(function(dbDonation) {
     res.json(dbDonation);
   });

@@ -25,11 +25,14 @@
   },
   "dependencies": {
     "auth0-js": "^9.0.0",
+    "axios": "^0.16.2",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "history": "^4.7.2",
     "method-override": "^2.3.10",
     "mysql2": "^1.5.2",
-    "axios": "^0.16.2",
+    "react": "^16.3.1",
+    "react-router": "^4.2.0",
     "sequelize": "^4.33.4"
   }
 }

@@ -9,8 +9,7 @@ import Auth from './auth/Auth/Auth';
 import history from './history';
 
 // my router
-// ***changed import { BrowserRouter as ...} to :
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import Nav from "./components/main/Nav";
 import Home from "./pages/Home";
 import Donations from "./pages/Donations";
@@ -21,6 +20,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 import { makeAuthRoutes } from './routesAuth';
+
+//import { Provider } from 'react-redux';
+//import store, { history } from './store';
 
 
 const auth = new Auth();
@@ -33,22 +35,23 @@ const handleAuthentication = ({location}) => {
 
 export const makeMainRoutes = () => {
   return (
-    <Router history={history}>
-    <div>
    
-    <Route path="/" render={(props) => <App auth={auth} {...props} />} />
-          <Route path="/home" render={(props) => <Home0 auth={auth} {...props} />} />
-          <Route path="/profile" render={(props) => (
-            !auth.isAuthenticated() ? (
-              <Redirect to="/home"/>
-            ) : (
-              <Profile auth={auth} {...props} />
-            )
-          )} />
-          <Route path="/callback" render={(props) => {
-            handleAuthentication(props);
-            return <Callback {...props} /> 
-          }}/> 
+      <Router history={history}>
+      <div>
+      <Route path="/" render={(props) => <App auth={auth} {...props} />} />
+      <Route path="/home" render={(props) => <Home0 auth={auth} {...props} />} />
+      <Route path="/profile" render={(props) => (
+        !auth.isAuthenticated() ? (
+          <Redirect to="/home"/>
+        ) : (
+          <Profile auth={auth} {...props} />
+        )
+      )} />
+      <Route path="/callback" render={(props) => {
+        handleAuthentication(props);
+        return <Callback {...props} /> 
+      }}/> 
+      
       <Nav />
 
       <Switch>
@@ -61,8 +64,8 @@ export const makeMainRoutes = () => {
         <Route exact path="/contact" component={Contact} />
         {/* {makeAuthRoutes} */}
       </Switch>
-               
-        </div>
+      </div>
       </Router>
+  
   );
 }
