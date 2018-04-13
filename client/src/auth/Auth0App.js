@@ -27,7 +27,7 @@ class App extends Component {
           <div className="nav-wrapper right-align">
 
             <button
-             className="btn-small grey"
+             className="is-info"
               onClick={this.goTo.bind(this, 'home')}
             >
               Auth0 Home

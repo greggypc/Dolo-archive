@@ -19,7 +19,7 @@ import SearchDonations from "./pages/SearchDonations";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
-import { makeAuthRoutes } from './routesAuth';
+//import { makeAuthRoutes } from './routesAuth';
 
 //import { Provider } from 'react-redux';
 //import store, { history } from './store';

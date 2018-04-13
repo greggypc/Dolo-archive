@@ -10,24 +10,16 @@ const Donations = () => (
   <div>
     
     <h1>Donations</h1>
-    <Container>
-      <Row>
-        <Col size="3">
+    <div class="container">
+      <div class="columns">
           <UserProfile />
-        </Col>
-        <Col size="6">
+       
           <UserDonations />
-        </Col>
-        <Col size="3">
+       
           <UserDonationForm />
-        </Col>
-      </Row>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-      varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-      Etiam ut feugiat ex. Cras non risus mi. 
-    </p>
-    </Container>
+        
+      </div>
+    </div>
   </div>
 );
 
