@@ -1,4 +1,5 @@
 import React from "react"; 
+import axios from "axios";
 import Container from "../components/grid/Container";
 import Row from "../components/grid/Row";
 import Col from "../components/grid/Col";
@@ -11,8 +12,21 @@ const containerStyle = {
   paddingTop:35
 };
 
-const Donations = () => (
-  
+class Donations extends React.Component {
+
+  componentDidMount() {
+    axios.get('/api/donations')
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+  }
+
+
+  render() {
+    return (
     <div style={containerStyle} className="container">
       <div class="columns">
       <div class="column is-one-quarter">
@@ -26,8 +40,11 @@ const Donations = () => (
         </div>
       </div>
     </div>
-
-);
+    )
+  }
+  
+};
+  
 
 export default Donations;
 
