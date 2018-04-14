@@ -6,21 +6,27 @@ import UserProfile from "../components/UserProfile";
 import UserDonations from "../components/userDonations/UserDonations";
 import UserDonationForm from "../components/userDonations/UserDonationForm";
 
+
+const containerStyle = {
+  paddingTop:35
+};
+
 const Donations = () => (
-  <div>
-    
-    <h1>Donations</h1>
-    <div class="container">
+  
+    <div style={containerStyle} className="container">
       <div class="columns">
-          <UserProfile />
-       
+      <div class="column is-one-quarter">
+        <UserProfile />
+       </div>
+       <div class="column is-one-half">
           <UserDonations />
-       
+       </div>
+       <div class="column is-one-quarter">
           <UserDonationForm />
-        
+        </div>
       </div>
     </div>
-  </div>
+
 );
 
 export default Donations;

@@ -1,7 +1,7 @@
 import React from "react";
 
 const UserProfile = ({ children }) => (
-  <div className="column is-3">
+  <div>
        <div className="card is-fullwidth ">
            <header className="card-header hero is-info">
                <p className="card-header-title has-text-white">

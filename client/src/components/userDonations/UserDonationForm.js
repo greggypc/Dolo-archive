@@ -9,7 +9,7 @@ class UserDonationForm extends React.Component {
   render() {
     return (
      
-     <div className="column is-3">
+     <div >
                 <div className="card is-fullwidth" >
                   <form id="donation-form">
                     <header className="card-header hero is-info">
